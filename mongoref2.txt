@@ -1,0 +1,21 @@
+cls
+use MyFirstDB
+db
+db.dropDatabase()
+
+db.createCollection("Employee");
+
+show collections
+
+db.CollectionName.drop()
+
+db.getCollectionNames()
+
+db.Employee.insert({name:'Emp1', address:'Pune'})
+
+db.Employee.find().pretty()
+
+db.Employee.remove({'name':'Emp3'})
+
+db.Employee.update({'name':'Emp3'}, {$set:{'name':'Emp3'}})
+
